@@ -25,7 +25,7 @@ typedef long double ld;
 typedef unsigned long long ull;
 using namespace std;
 
-/* SOLUTION FOR CODEFORCES 463 D Problema GARGARI AND PERMUTATION BUILDING A DAG FOR LCS PROBLEM (N STRINGS) */
+/* SOLUTION FOR CODEFORCES 463 D building a DAG for LCS problem with N strings */
 
 vi g[N + 1];
 int pos[K + 1][N + 1], lcs[N + 1];
