@@ -1,3 +1,3 @@
 # Algorithms
 
-Base algorithms usied for ACM - ICPC contestants implemented in C++.
+Base algorithms used for ACM - ICPC contestants implemented in C++.
