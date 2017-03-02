@@ -65,7 +65,7 @@ vi zfunction(string s) {
 * and after that the z array will be created for
 * this new string. In z array are stored the length 
 * of the longest substring starting from i which is a 
-* prefix (it means, which is the pattern because string 
+* prefix (notice that pattern is a prefix because the string
 * used for computation of z array was pattern + "$" + text).
 * So if we are looking for a matching, is only needed to
 * check if there is a prefix with the same length as pattern
