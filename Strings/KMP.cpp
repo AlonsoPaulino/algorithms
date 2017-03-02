@@ -26,6 +26,10 @@ const int N = 10000;
 
 vi lps(N);
 
+/*
+* This method will compute lps array.
+* LPS Array indicates longest proper prefix (ignoring full string) which is also a suffix
+*/
 void buildLPSArray(string pattern) {
     lps[0] = -1;
     int i = 0, j = -1;
@@ -37,6 +41,15 @@ void buildLPSArray(string pattern) {
     }
 }
 
+/*
+* KMP Search will use LPS Array to reset the value of j.
+* j must be reseted using LPS Array in order to avoid 
+* unnecessary iterations.
+* j indicate current index for pattern.
+* i indicate current index for text.
+* It is easy to note here that the complexity of this algorithm 
+* is O(n) where n is the length of text
+*/
 vi kmp(string pattern, string text) {
     vi matchings;
     int i = 0, j = 0;
