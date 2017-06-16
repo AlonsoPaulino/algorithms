@@ -50,7 +50,7 @@ bool query(int u, int v) {
     /* Outtime: If we again visit the node later but there is no children unvisited */
     /* NOTE: Any node in its sub-tree will always have intime < its children because it is always visited
         first before children (DFS) and will have outtime > all nodes in its sub-tree because before
-        nothing the outtime it waits for all of its children to be market visited.*/
+        nothing the outtime it waits for all of its children to be marked as visited.*/
     return (intime[u] < intime[v] && outtime[u] > outtime[v]) ||
             (intime[v] < intime[u] && outtime[v] > outtime[u]);
 }
