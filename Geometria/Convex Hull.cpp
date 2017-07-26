@@ -53,7 +53,7 @@ vector<Point> convexHull(vector<Point> v) {
     }
 
     for (int i = n - 2, t = k + 1; i >= 0; --i) {
-        while (k >= 2 && cross(h[k - 2], h[k - 1], v[i]) < 0) k--;
+        while (k >= t && cross(h[k - 2], h[k - 1], v[i]) < 0) k--;
         h[k++] = v[i];
     }
 
