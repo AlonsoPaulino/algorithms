@@ -28,7 +28,7 @@ using namespace std;
 /*
 * Credits: https://www.topcoder.com/community/competitive-programming/tutorials/binary-search
 *
-* Try these problems out!:
+* Try these problems out!
 * https://leetcode.com/problems/search-in-rotated-sorted-array/
 * https://www.spoj.com/problems/CURDPROD/
 */
