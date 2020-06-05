@@ -43,9 +43,9 @@ int main() {
 
     /*
     * dp[i][j] stores what are the minimum number of operations needed to make the substring with the first 'i'
-    * characters of 'a' to become the bustring with the first 'j' characters of 'b'.
-    * Since i = 0 && j = 0 means first 0 characters, we are talking about an empty strings. The initial state to
-    * transofmr a string 's' into an empty string is, for the first character of s: 1, for the second, 2 and so on.
+    * characters of 'a' to become the substring with the first 'j' characters of 'b'.
+    * Since i = 0 && j = 0 means first 0 characters, we are talking about an empty string. The initial state to
+    * transform a string 's' into an empty string is, for the first character of s: 1, for the second, 2 and so on.
     */
     for (int i = 0; i <= n; ++i) dp[i][0] = i;
     for (int i = 0; i <= m; ++i) dp[0][i] = i;
@@ -53,8 +53,8 @@ int main() {
     /*
     * If the characters in both strings match, we don't need any operation since we can keep that character at
     * that position, just rely on the number of operations needed to get the previous substring that do not takes
-    * account the current character, in other words, rely just on (i - 1, j - 1).
-    * If characters do not match, we need an operation (any of the three mentioned in the problem statement).
+    * into account the current character, in other words, just rely on (i - 1, j - 1).
+    * If characters do not match, we need 1 operation (any of the three mentioned in the problem statement).
     * Let's add 1, which represents one extra operation, and pick up the minimum number of operations needed to get
     * any of the possible previous substrings, in other words do:
     * (i, j) = min[ Replace + (i - 1, j - 1), Delete + (i - 1, j), Insert + (i, j - 1) ]
