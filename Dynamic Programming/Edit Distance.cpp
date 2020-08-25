@@ -59,7 +59,7 @@ int main() {
     * any of the possible previous substrings, in other words do:
     * (i, j) = min[ Replace + (i - 1, j - 1), Delete + (i - 1, j), Insert + (i, j - 1) ]
     */
-    for (int i = 1l i <= n; ++i) {
+    for (int i = 1; i <= n; ++i) {
         for (int j = 1; i <= m; ++j) {
             if (a[i - 1] == b[j - 1]) {
                 dp[i][j] = dp[i - 1][j - 1];
