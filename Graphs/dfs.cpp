@@ -5,6 +5,7 @@ const int N = 100;
 vi ady[N];
 vector<bool> vis(N);
 
+// Recursive Approach
 // u: root node to start the dfs
 void dfs(int u) {
     vis[u] = true; // Node u is set as visited
@@ -17,6 +18,7 @@ void dfs(int u) {
     }
 }
 
+// Iterative approach
 // u: root node to start the dfs
 void dfs(int u) {
     stack<int> st;
