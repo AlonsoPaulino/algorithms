@@ -1,4 +1,5 @@
 // Depth First Search O(V + E)
+// Reference: https://www.csd.uoc.gr/~hy583/papers/ch3_4.pdf
 #include "../macros.h"
 
 const int N = 100;
@@ -34,7 +35,7 @@ void dfs(int u) {
 }
 
 // Used to classify edges
-vi color(N, 0); // 0: Not visited, 1: Visiting, 2: Visited and exited
+vi color(N, 0); // 0: White (not discovered yet), 1: Grey (discovered), 2: Black (finished)
 vi d(N, 0); // Discovery time
 vi f(N, 0); // Finishing time
 vi p(N, -1); // Parents
