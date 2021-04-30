@@ -35,17 +35,20 @@ void dfs(int u) {
 
 // Used to classify edges
 vi color(N, 0); // 0: Not visited, 1: Visiting, 2: Visited and exited
-vi t_in(N, 0), t_out(N, 0);
-int dfs_t = 0;
+vi d(N, 0); // Discovery time
+vi f(N, 0); // Finishing time
+vi p(N, -1); // Parents
+int t = 0;
 
 void dfs(int u) {
-    t_in[u] = dfs_t++;
+    d[u] = t++;
     color[u] = 1;
     for (int v: ady[u]) {
         if (color[v] == 0) {
+            p[v] = u;
             dfs(v);
         }
     }
     color[u] = 2;
-    t_out[u] = dfs_t++;
+    f[u] = t++;
 }
