@@ -1,6 +1,7 @@
 // Quicksort O(nlogn)
 // Reference: Introduction to Algorithms 3rd Edition
-#include "../macros.h"
+#include <bits/stdc++.h>
+using namespace std;
 
 vector<int> v;
 

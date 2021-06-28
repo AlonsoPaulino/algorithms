@@ -1,9 +1,10 @@
 // Depth First Search O(V + E)
 // Reference: https://www.csd.uoc.gr/~hy583/papers/ch3_4.pdf
-#include "../macros.h"
+#include <bits/stdc++.h>
+using namespace std;
 
 const int N = 100;
-vi ady[N];
+vector<int> ady[N];
 vector<bool> vis(N);
 
 // Recursive Approach
@@ -35,10 +36,10 @@ void dfs(int u) {
 }
 
 // Used to classify edges
-vi color(N, 0); // 0: White (not discovered yet), 1: Grey (discovered), 2: Black (finished)
-vi d(N, 0); // Discovery time
-vi f(N, 0); // Finishing time
-vi p(N, -1); // Parents
+vector<int> color(N, 0); // 0: White (not discovered yet), 1: Grey (discovered), 2: Black (finished)
+vector<int> d(N, 0); // Discovery time
+vector<int> f(N, 0); // Finishing time
+vector<int> p(N, -1); // Parents
 int t = 0;
 
 void dfs(int u) {

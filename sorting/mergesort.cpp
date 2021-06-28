@@ -1,6 +1,7 @@
 // Mergesort O(nlogn)
 // Reference: https://www.geeksforgeeks.org/merge-sort/
-#include "../macros.h"
+#include <bits/stdc++.h>
+using namespace std;
 
 vector<int> v;
 
@@ -13,7 +14,7 @@ void mergesort(int lo, int hi) {
     mergesort(lo, mid);
     mergesort(mid + 1, hi);
 
-    vi tmp(hi - lo + 1);
+    vector<int> tmp(hi - lo + 1);
     int i = lo, j = mid + 1, k = 0;
 
     // merge two sub-arrays [lo, mid] & [mid + 1, hi]
