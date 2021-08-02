@@ -1,4 +1,4 @@
-// Dijkstra O((V + E) log E)
+// Dijkstra - Shortest Path O((V + E) log E)
 #include <bits/stdc++.h>
 #define sz(x) (int) x.size()
 #define pii pair<int, int>
