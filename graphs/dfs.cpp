@@ -1,5 +1,4 @@
 // Depth First Search O(V + E)
-// Reference: https://www.csd.uoc.gr/~hy583/papers/ch3_4.pdf
 #include <bits/stdc++.h>
 using namespace std;
 
