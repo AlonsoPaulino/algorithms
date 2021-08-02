@@ -1,5 +1,4 @@
 // Quicksort O(nlogn)
-// Reference: Introduction to Algorithms 3rd Edition
 #include <bits/stdc++.h>
 using namespace std;
 

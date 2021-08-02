@@ -1,5 +1,4 @@
 // Mergesort O(nlogn)
-// Reference: https://www.geeksforgeeks.org/merge-sort/
 #include <bits/stdc++.h>
 using namespace std;
 

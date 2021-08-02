@@ -15,7 +15,7 @@ void dijkstra(int root) {
     pq.push({0, root}), dist[root] = 0;
     while (!pq.empty()) {
         auto p = pq.top(); pq.pop();
-        int u = p.second, d = p.first;
+        int u = p.second;
         for (int i = 0; i < sz(ady[u]); ++i) {
             int v = ady[u][i], w = adyw[u][i];
             if (dist[u] + w < dist[v]) {
